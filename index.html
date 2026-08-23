@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NyayaPath | Your Right. Your Next Step.</title>
+  <meta name="description"
+        content="NyayaPath helps people understand their legal rights and find their next step.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">
+    <div class="logo-icon">N</div>
+    <span>NyayaPath</span>
+  </div>
+
+  <nav id="navMenu">
+    <a href="#home">Home</a>
+    <a href="#rights">Know Your Rights</a>
+    <a href="#steps">Next Step</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <button class="menu-button" onclick="toggleMenu()">☰</button>
+</header>
+
+
+<main>
+
+<section id="home" class="hero">
+
+  <div class="hero-content">
+
+    <p class="tagline">LEGAL AWARENESS • SIMPLE GUIDANCE</p>
+
+    <h1>
+      Your Right.
+      <span>Your Next Step.</span>
+    </h1>
+
+    <p class="hero-description">
+      NyayaPath helps you understand your basic legal rights
+      and discover practical next steps in simple language.
+    </p>
+
+    <div class="buttons">
+
+      <a href="#rights" class="button primary">
+        Know Your Rights
+      </a>
+
+      <a href="#steps" class="button secondary">
+        Find Your Next Step
+      </a>
+
+    </div>
+
+    <p class="disclaimer">
+      General legal awareness information only.
+      Not a substitute for professional legal advice.
+    </p>
+
+  </div>
+
+
+  <div class="hero-card">
+
+    <div class="balance">⚖️</div>
+
+    <h2>
+      Understand.<br>
+      Decide.<br>
+      Act.
+    </h2>
+
+    <p>
+      Start with your situation, understand your options
+      and take your next step with confidence.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<section id="rights" class="section">
+
+  <div class="section-title">
+
+    <p class="tagline">KNOW YOUR RIGHTS</p>
+
+    <h2>What do you need help with?</h2>
+
+    <p>
+      Select a topic to explore general legal awareness information.
+    </p>
+
+  </div>
+
+
+  <div class="search-box">
+
+    <input
+      type="text"
+      id="search"
+      placeholder="Search a topic..."
+      onkeyup="searchTopics()"
+    >
+
+  </div>
+
+
+  <div class="cards" id="cards">
+
+
+    <div class="card" data-name="consumer rights">
+
+      <div class="card-icon">🛒</div>
+
+      <h3>Consumer Rights</h3>
+
+      <p>
+        Learn what you can do when a product or service
+        does not meet expectations.
+      </p>
+
+      <button onclick="openTopic('Consumer Rights')">
+        Explore →
+      </button>
+
+    </div>
+
+
+    <div class="card" data-name="cyber safety">
+
+      <div class="card-icon">🔐</div>
+
+      <h3>Cyber Safety</h3>
+
+      <p>
+        Learn basic steps after online fraud, scams
+        or digital safety concerns.
+      </p>
+
+      <button onclick="openTopic('Cyber Safety')">
+        Explore →
+      </button>
+
+    </div>
+
+
+    <div class="card" data-name="workplace rights">
+
+      <div class="card-icon">💼</div>
+
+      <h3>Workplace Rights</h3>
+
+      <p>
+        Understand general workplace rights,
+        concerns and possible options.
+      </p>
+
+      <button onclick="openTopic('Workplace Rights')">
+        Explore →
+      </button>
+
+    </div>
+
+
+    <div class="card" data-name="women safety">
+
+      <div class="card-icon">🛡️</div>
+
+      <h3>Women & Safety</h3>
+
+      <p>
+        Explore general information about safety
+        concerns and possible support routes.
+      </p>
+
+      <button onclick="openTopic('Women & Safety')">
+        Explore →
+      </button>
+
+    </div>
+
+
+    <div class="card" data-name="property housing">
+
+      <div class="card-icon">🏠</div>
+
+      <h3>Property & Housing</h3>
+
+      <p>
+        Learn common concepts related to renting,
+        housing and property concerns.
+      </p>
+
+      <button onclick="openTopic('Property & Housing')">
+        Explore →
+      </button>
+
+    </div>
+
+
+    <div class="card" data-name="student rights">
+
+      <div class="card-icon">🎓</div>
+
+      <h3>Student Rights</h3>
+
+      <p>
+        Explore general awareness information
+        relevant to students and education.
+      </p>
+
+      <button onclick="openTopic('Student Rights')">
+        Explore →
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section id="steps" class="steps-section">
+
+  <div class="section-title">
+
+    <p class="tagline">YOUR NEXT STEP</p>
+
+    <h2>A simple path forward</h2>
+
+  </div>
+
+
+  <div class="steps">
+
+    <div class="step">
+
+      <div class="number">01</div>
+
+      <h3>Describe</h3>
+
+      <p>
+        Identify what happened and collect
+        the important facts.
+      </p>
+
+    </div>
+
+
+    <div class="step">
+
+      <div class="number">02</div>
+
+      <h3>Understand</h3>
+
+      <p>
+        Learn about relevant rights,
+        options and possible routes.
+      </p>
+
+    </div>
+
+
+    <div class="step">
+
+      <div class="number">03</div>
+
+      <h3>Act</h3>
+
+      <p>
+        Choose a practical next step and
+        keep records of important actions.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section id="about" class="about">
+
+  <div>
+
+    <p class="tagline">ABOUT NYAYAPATH</p>
+
+    <h2>
+      Legal awareness,
+      made easier.
+    </h2>
+
+  </div>
+
+
+  <div>
+
+    <p>
+      NyayaPath is designed to make legal information
+      easier to discover and understand.
+    </p>
+
+    <p>
+      Our goal is simple:
+      help people understand their rights,
+      identify possible options and find
+      their next step.
+    </p>
+
+  </div>
+
+</section>
+
+</main>
+
+
+
+<footer>
+
+  <div class="footer-logo">
+    NyayaPath
+  </div>
+
+  <p>
+    Your Right. Your Next Step.
+  </p>
+
+  <small>
+    © 2026 NyayaPath. For educational and awareness purposes.
+  </small>
+
+</footer>
+
+
+
+<!-- MODAL -->
+
+<div id="modal" class="modal">
+
+  <div class="modal-content">
+
+    <button class="close" onclick="closeTopic()">×</button>
+
+    <p class="tagline">NYAYAPATH GUIDE</p>
+
+    <h2 id="modalTitle"></h2>
+
+    <p id="modalDescription"></p>
+
+    <div class="tip">
+
+      <strong>Important:</strong>
+
+      Keep relevant documents, receipts,
+      screenshots, messages and dates where applicable.
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
